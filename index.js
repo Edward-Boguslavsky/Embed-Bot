@@ -29,9 +29,9 @@ client.on(Events.MessageCreate, async message => {
 
     // Ignore if message doesn't contain any relevant links
     const originalContent = message.content;
-    if (!originalContent.includes('.reddit.com') && 
-        !originalContent.includes('.twitter.com') && 
-        !originalContent.includes('.x.com')) {
+    if (!originalContent.includes('reddit.com') && 
+        !originalContent.includes('twitter.com') && 
+        !originalContent.includes('x.com')) {
         return;
     }
 
