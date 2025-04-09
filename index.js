@@ -77,7 +77,7 @@ client.on(Events.MessageCreate, async message => {
             const contentEmbed = new EmbedBuilder()
                 .setDescription(originalContent)
                 .setColor('#4C4C54')
-                .setAuthor({ name: message.author.tag, iconURL: message.author.displayAvatarURL() })
+                .setAuthor({ name: message.author.displayName, iconURL: message.author.displayAvatarURL() })
 
             // Send embed message with original content
             await message.channel.send({
