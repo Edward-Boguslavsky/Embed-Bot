@@ -19,7 +19,7 @@ const redditRegex = /https?:\/\/(?:www\.|old\.)?reddit\.com\/r\/[a-zA-Z0-9_]+\/c
 // When the bot is ready
 client.once(Events.ClientReady, c => {
     console.log(`✅ Ready! Logged in as ${c.user.tag}`);
-    console.log(`➡️  Bot is in ${c.guilds.cache.size} server(s)`);
+    console.log(`➡️ Bot is in ${c.guilds.cache.size} server(s)`);
 });
 
 // When the bot detects a new message
